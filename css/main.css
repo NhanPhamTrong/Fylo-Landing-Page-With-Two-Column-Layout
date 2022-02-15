@@ -1,0 +1,563 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body a {
+  color: #f6f6fe;
+}
+
+body h1, body h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
+body h1 {
+  font-size: 2.25rem;
+}
+
+body input {
+  border: #bfbfbf solid 1px;
+  border-radius: 4px;
+  outline: none;
+}
+
+body input.wrong {
+  margin: 0;
+  border: red solid 1px;
+}
+
+body button {
+  background: #3065f8;
+  color: #f6f6fe;
+  cursor: pointer;
+}
+
+body .container {
+  width: 80rem;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1200px) {
+  body .container {
+    width: 60rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  body .container {
+    width: 46rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body .container {
+    width: 36rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body .container {
+    width: 21rem;
+  }
+}
+
+body, header, main, footer, h1, h2, h3, h4, h5, h6, p, span, a, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  padding-top: 4rem;
+}
+
+nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav .container .brand {
+  height: 3rem;
+  width: 10.5rem;
+  background: url("../images/logo.svg") no-repeat;
+  background-size: contain;
+}
+
+nav .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav .container ul .nav-item {
+  margin-left: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .container ul .nav-item .nav-link {
+  color: #070439;
+}
+
+@media only screen and (max-width: 600px) {
+  nav .container .brand {
+    height: 2rem;
+    width: 7rem;
+  }
+  nav .container ul .nav-item {
+    margin-left: 1.5rem;
+  }
+}
+
+main #heading {
+  padding: 3.5rem 0 12.5rem;
+  background: url("../images/bg-curve-desktop.svg") no-repeat bottom center;
+  background-size: 100% auto;
+}
+
+main #heading .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #heading .container .heading-info {
+  width: 34rem;
+}
+
+main #heading .container .heading-info h1 {
+  line-height: 3rem;
+}
+
+main #heading .container .heading-info p {
+  margin: 2rem 0;
+}
+
+main #heading .container .heading-info .email-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+main #heading .container .heading-info .email-input input {
+  width: 55%;
+  padding: 0.75rem 1rem;
+}
+
+main #heading .container .heading-info .email-input .error {
+  margin: 0;
+  color: red;
+  font-size: 14px;
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+}
+
+main #heading .container .heading-info .email-input button {
+  padding: 0.75rem 3.5rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+main #heading .container .heading-background {
+  height: 28rem;
+  width: 40rem;
+  background: url("../images/illustration-1.svg") no-repeat;
+  background-size: contain;
+}
+
+main #stay-productive {
+  background-color: #f6f6fe;
+}
+
+main #stay-productive .container {
+  padding: 7rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #stay-productive .container .stay-productive-info {
+  width: 36rem;
+}
+
+main #stay-productive .container .stay-productive-info h1 {
+  margin-bottom: 2.5rem;
+}
+
+main #stay-productive .container .stay-productive-info .intro {
+  margin-bottom: 1.5rem;
+}
+
+main #stay-productive .container .stay-productive-info .see-how-it-works a {
+  color: #3c9f8f;
+  position: relative;
+}
+
+main #stay-productive .container .stay-productive-info .see-how-it-works a:before {
+  height: 2px;
+  width: 100%;
+  background-color: #3c9f8f;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+main #stay-productive .container .stay-productive-info .comment {
+  width: 18rem;
+  margin-top: 3rem;
+  padding: 0 2rem 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 20px grey;
+          box-shadow: 0px 0px 20px grey;
+}
+
+main #stay-productive .container .stay-productive-info .comment .comment-content {
+  padding-top: 3.25rem;
+  background: url("../images/icon-quotes.svg") no-repeat top 35px left;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+main #stay-productive .container .stay-productive-info .comment .user {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #stay-productive .container .stay-productive-info .comment .user img {
+  height: 2.25rem;
+  width: 2.25rem;
+  margin-right: 1rem;
+  border-radius: 50px;
+}
+
+main #stay-productive .container .stay-productive-info .comment .user div .user-name {
+  font-weight: 700;
+}
+
+main #stay-productive .container .stay-productive-info .comment .user div .user-info {
+  font-size: 12px;
+}
+
+main #stay-productive .container .stay-productive-background {
+  height: 27rem;
+  width: 36rem;
+  background: url("../images/illustration-2.svg") no-repeat;
+  background-size: contain;
+}
+
+main #CTA {
+  padding: 6.5rem 0;
+  background-color: #585989;
+  color: #f6f6fe;
+}
+
+main #CTA .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main #CTA .container .CTA-text {
+  width: 32rem;
+}
+
+main #CTA .container .CTA-text h2 {
+  margin-bottom: 2rem;
+}
+
+main #CTA .container .email-input {
+  width: 32rem;
+}
+
+main #CTA .container .email-input input {
+  width: 30rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+}
+
+main #CTA .container .email-input .error {
+  margin-bottom: 1rem;
+  font-size: 14px;
+}
+
+main #CTA .container .email-input button {
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 1200px) {
+  main #heading .container .heading-info {
+    width: 25.5rem;
+  }
+  main #heading .container .heading-info .email-input input {
+    width: 50%;
+  }
+  main #heading .container .heading-info .email-input button {
+    padding: 0.75rem 2.5rem;
+  }
+  main #heading .container .heading-background {
+    height: 21rem;
+    width: 30rem;
+  }
+  main #CTA .container .email-input {
+    width: 24rem;
+  }
+  main #CTA .container .email-input input {
+    width: 22rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  main #heading .container .heading-info .email-input button {
+    padding: 0.75rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main #heading .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #heading .container .heading-info {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main #heading .container .heading-info .email-input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #heading .container .heading-info .email-input input {
+    width: 33.85rem;
+    margin-bottom: 1rem;
+  }
+  main #heading .container .heading-info .email-input .error {
+    position: static;
+    margin-bottom: 1rem;
+  }
+  main #heading .container .heading-background {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main #stay-productive .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main #stay-productive .container .stay-productive-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  main #stay-productive .container .stay-productive-info .see-how-it-works {
+    text-align: center;
+  }
+  main #stay-productive .container .stay-productive-info .comment {
+    margin: 3rem auto 0;
+  }
+  main #stay-productive .container .stay-productive-background {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  main #CTA .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  main #CTA .container .CTA-text {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  main #CTA .container .email-input {
+    width: 21rem;
+    margin: 0 auto;
+  }
+  main #CTA .container .email-input input {
+    width: 18.85rem;
+  }
+  main #CTA .container .email-input .error {
+    text-align: left;
+  }
+  main #CTA .container .email-input button {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main #heading .container .heading-info .email-input input {
+    width: 18.85rem;
+  }
+  main #stay-productive .container .stay-productive-info {
+    width: 100%;
+  }
+  main #stay-productive .container .stay-productive-info .comment {
+    width: 75%;
+  }
+  main #stay-productive .container .stay-productive-background {
+    height: 17.25rem;
+  }
+}
+
+footer {
+  padding: 6.5rem 0 0;
+  background-color: #070439;
+  color: #f6f6fe;
+}
+
+footer .container {
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 1.5rem;
+}
+
+footer .container .brand {
+  height: 3.5rem;
+  width: 11.25rem;
+  background: url("../images/logo-2.svg") no-repeat;
+  background-size: contain;
+}
+
+footer .container .contact {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+footer .container .contact p {
+  margin-bottom: 1rem;
+}
+
+footer .container .contact p svg {
+  margin-right: 1rem;
+}
+
+footer .container .more-info-1 {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+footer .container .more-info-1 li {
+  margin-bottom: 1rem;
+}
+
+footer .container .more-info-2 {
+  -ms-grid-column: 3;
+  grid-column: 3;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+footer .container .more-info-2 li {
+  margin-bottom: 1rem;
+}
+
+footer .container .social-media {
+  -ms-grid-column: 4;
+  grid-column: 4;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+footer .container .social-media a {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border: white solid 1px;
+  border-radius: 50px;
+}
+
+footer .container .social-media a i {
+  height: 18px;
+  width: 18px;
+}
+
+footer .container .attribution {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
+}
+
+@media only screen and (max-width: 768px) {
+  footer .container .more-info-1 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  footer .container .more-info-2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  footer .container .social-media {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 5;
+    grid-row: 5;
+    margin: 0 auto;
+  }
+  footer .container .attribution {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 6;
+    grid-row: 6;
+  }
+}
+/*# sourceMappingURL=main.css.map */
