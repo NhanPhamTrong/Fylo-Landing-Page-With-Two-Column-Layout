@@ -1,0 +1,47 @@
+nav {
+    padding-top: 4rem;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .brand {
+            height: 3rem;
+            width: 10.5rem;
+            background: url("../images/logo.svg") no-repeat;
+            background-size: contain;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+
+            .nav-item {
+                margin-left: 3rem;
+                display: flex;
+                align-items: center;
+
+                .nav-link {
+                    color: $word-color-2;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    nav {
+        .container {
+            .brand {
+                height: 2rem;
+                width: 7rem;
+            }
+
+            ul {
+                .nav-item {
+                    margin-left: 1.5rem;
+                }
+            }
+        }
+    }
+}

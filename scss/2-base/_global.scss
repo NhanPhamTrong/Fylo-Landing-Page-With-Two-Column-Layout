@@ -1,0 +1,70 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+
+    a {
+        color: $word-color-1;
+    }
+
+    h1, h2 {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    input {
+        border: $border solid 1px;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    input.wrong {
+        margin: 0;
+        border: $error solid 1px;
+    }
+
+    button {
+        background: $button-background;
+        color: $word-color-1;
+        cursor: pointer;
+    }
+
+    .container {
+        width: 80rem;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        .container {
+            width: 60rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body {
+        .container {
+            width: 46rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        .container {
+            width: 36rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        .container {
+            width: 21rem;
+        }
+    }
+}

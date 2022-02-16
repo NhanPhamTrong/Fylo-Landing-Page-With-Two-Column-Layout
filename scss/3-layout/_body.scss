@@ -1,0 +1,360 @@
+main {
+    #heading {
+        padding: 3.5rem 0 12.5rem;
+        background: url("../images/bg-curve-desktop.svg") no-repeat bottom center;
+        background-size: 100% auto;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .heading-info {
+                width: 34rem;
+    
+                h1 {
+                    line-height: 3rem;
+                }
+    
+                p {
+                    margin: 2rem 0;
+                }
+    
+                .email-input {
+                    display: flex;
+                    justify-content: space-between;
+                    position: relative;
+    
+                    input {
+                        width: 55%;
+                        padding: 0.75rem 1rem;
+                    }
+
+                    .error {
+                        margin: 0;
+                        color: $error;
+                        font-size: 14px;
+                        position: absolute;
+                        bottom: -1.5rem;
+                        left: 0;
+                    }
+    
+                    button {
+                        padding: 0.75rem 3.5rem;
+                        border: none;
+                        border-radius: 4px;
+                        font-weight: 700;
+                    }
+                }
+            }
+    
+            .heading-background {
+                height: 28rem;
+                width: 40rem;
+                background: url("../images/illustration-1.svg") no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    #stay-productive {
+        background-color: $main-background;
+
+        .container {
+            padding: 7rem 0;
+            display: flex;
+            justify-content: space-between;
+
+            .stay-productive-info {
+                width: 36rem;
+
+                h1 {
+                    margin-bottom: 2.5rem;
+                }
+                
+                .intro {
+                    margin-bottom: 1.5rem;
+                }
+
+                .see-how-it-works {
+                    a {
+                        color: $word-color-3;
+                        position: relative;
+                    }
+    
+                    a:before {
+                        height: 2px;
+                        width: 100%;
+                        background-color: $word-color-3;
+                        content: "";
+                        position: absolute;
+                        bottom: -5px;
+                        left: 0;
+                    }
+                }
+
+                .comment {
+                    width: 18rem;
+                    margin-top: 3rem;
+                    padding: 0 2rem 1.5rem;
+                    background-color: $comment-background;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 20px grey;
+
+                    .comment-content {
+                        padding-top: 3.25rem;
+                        background: url("../images/icon-quotes.svg") no-repeat top 35px left;
+                        font-size: 14px;
+                        line-height: 1.5rem;
+                    }
+
+                    .user {
+                        margin-top: 1rem;
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            height: 2.25rem;
+                            width: 2.25rem;
+                            margin-right: 1rem;
+                            border-radius: 50px;
+                        }
+
+                        div {
+                            .user-name {
+                                font-weight: 700;
+                            }
+
+                            .user-info {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .stay-productive-background {
+                height: 27rem;
+                width: 36rem;
+                background: url("../images/illustration-2.svg") no-repeat;
+                background-size: contain;
+            }
+        }
+    }
+
+    #CTA {
+        padding: 6.5rem 0;
+        background-color: $CTA-background;
+        color: $word-color-1;
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .CTA-text {
+                width: 32rem;
+
+                h2 {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .email-input {
+                width: 32rem;
+
+                input {
+                    width: 30rem;
+                    margin-bottom: 1rem;
+                    padding: 0.75rem 1rem;
+                }
+
+                .error {
+                    margin-bottom: 1rem;
+                    font-size: 14px;
+                }
+
+                button {
+                    padding: 0.75rem 2rem;
+                    border: none;
+                    border-radius: 4px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    main {
+        #heading {
+            .container {
+                .heading-info {
+                    width: 25.5rem;
+
+                    .email-input {
+                        input {
+                            width: 50%;
+                        }
+
+                        button {
+                            padding: 0.75rem 2.5rem;
+                        }
+                    }
+                }
+
+                .heading-background {
+                    height: 21rem;
+                    width: 30rem;
+                }
+            }
+        }
+
+        #CTA {
+            .container {
+                .email-input {
+                    width: 24rem;
+
+                    input {
+                        width: 22rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    main {
+        #heading {
+            .container {
+                .heading-info {
+                    .email-input {
+                        button {
+                            padding: 0.75rem 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        #heading {
+            .container {
+                flex-direction: column;
+
+                .heading-info {
+                    width: 100%;
+                    order: 2;
+
+                    .email-input {
+                        flex-direction: column;
+
+                        input {
+                            width: 33.85rem;
+                            margin-bottom: 1rem;
+                        }
+
+                        .error {
+                            position: static;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+
+                .heading-background {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                    order: 1;
+                }
+            }
+        }
+
+        #stay-productive {
+            .container {
+                flex-direction: column;
+
+                .stay-productive-info {
+                    order: 2;
+
+                    .see-how-it-works {
+                        text-align: center;
+                    }
+
+                    .comment {
+                        margin: 3rem auto 0;
+                    }
+                }
+
+                .stay-productive-background {
+                    width: 100%;
+                    margin-bottom: 1.5rem;
+                    order: 1;
+                }
+            }
+        }
+
+        #CTA {
+            .container {
+                flex-direction: column;
+                text-align: center;
+
+                .CTA-text {
+                    width: 100%;
+                    margin-bottom: 2rem;
+                }
+
+                .email-input {
+                    width: 21rem;
+                    margin: 0 auto;
+
+                    input {
+                        width: 18.85rem;
+                    }
+
+                    .error {
+                        text-align: left;
+                    }
+
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        #heading {
+            .container {
+                .heading-info {
+                    .email-input {
+                        input {
+                            width: 18.85rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        #stay-productive {
+            .container {
+                .stay-productive-info {
+                    width: 100%;
+
+                    .comment {
+                        width: 75%;
+                    }
+                }
+
+                .stay-productive-background {
+                    height: 17.25rem;
+                }
+            }
+        }
+    }
+}
